@@ -1,0 +1,100 @@
+# ui/screens/input.kv
+<InputContent@BoxLayout>:
+    orientation: "vertical"
+    spacing: "12dp"
+    padding: "16dp"
+    MDLabel:
+        id: apr_label
+        text: "APR: 0.00% | Total Interest: KES 0.00"
+        theme_text_color: "Secondary"
+        font_style: "Caption"
+        size_hint_y: None
+        height: self.texture_size[1]
+        opacity: 0    
+    MDTextField:
+        id: description_input
+        hint_text: "Description"
+        mode: "fill"
+        font_size: "16sp"
+        line_color_normal: app.theme_cls.primary_color
+        
+    MDTextField:
+        id: amount_input
+        hint_text: "Amount (KES)"
+        input_filter: "float"
+        mode: "fill"
+        font_size: "16sp"
+        line_color_normal: app.theme_cls.primary_color
+        
+    MDTextField:
+        id: term_input
+        hint_text: "Term (months)"
+        input_filter: "int"
+        mode: "fill"
+        font_size: "16sp"
+        line_color_normal: app.theme_cls.primary_color
+        disabled: True
+        opacity: 0
+        
+    MDTextField:
+        id: instalment_input
+        hint_text: "Monthly Instalment (KES)"
+        input_filter: "float"
+        mode: "fill"
+        font_size: "16sp"
+        line_color_normal: app.theme_cls.primary_color
+        disabled: True
+        opacity: 0
+
+<InputScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "16dp"
+        padding: "16dp"
+        
+        MDBoxLayout:
+            size_hint_y: None
+            height: "56dp"
+            spacing: "16dp"
+            
+            MDIconButton:
+                icon: "arrow-left"
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                on_release: root.manager.current = 'home'
+                
+            MDLabel:
+                text: "Add Transaction"
+                font_style: "H6"
+                bold: True
+                halign: "left"
+        
+        GridLayout:
+            cols: 1
+            spacing: "16dp"
+            size_hint_y: None
+            height: self.minimum_height
+            
+            MDRoundFlatButton:
+                text: "Add Income"
+                icon: "cash-plus"
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                line_color: app.theme_cls.primary_color
+                on_release: root.show_input_dialog("income")
+                
+            MDRoundFlatButton:
+                text: "Add Expense"
+                icon: "cash-minus"
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                line_color: app.theme_cls.primary_color
+                on_release: root.show_input_dialog("expense")
+                
+            MDRoundFlatButton:
+                text: "Add Loan"
+                icon: "bank-plus"
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                line_color: app.theme_cls.primary_color
+                on_release: root.show_input_dialog("loan")
