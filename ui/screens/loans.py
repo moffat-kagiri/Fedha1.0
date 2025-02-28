@@ -3,8 +3,7 @@ from kivymd.uix.screen import MDScreen
 from kivymd.uix.card import MDCard
 from kivymd.uix.menu import MDDropdownMenu
 from kivymd.uix.dialog import MDDialog
-from kivymd.uix.button import MDButton
-from kivymd.uix.button import MDButtonText
+from kivymd.uix.button import MDRaisedButton, MDFlatButton
 from kivymd.uix.label import MDLabel
 from kivy.properties import DictProperty, NumericProperty
 from kivy.metrics import dp
@@ -64,7 +63,7 @@ class LoanItem(MDCard):
         MDDialog(
             title="Payment Error",
             text=message,
-            buttons=[MDButtonText(text="OK", on_release=lambda x: x.parent.parent.dismiss())]
+            buttons=[MDFlatButton(text="OK", on_release=lambda x: x.parent.parent.dismiss())]
         ).open()
 
 class LoansScreen(MDScreen):
@@ -142,5 +141,9 @@ class LoansScreen(MDScreen):
         MDDialog(
             title="Loan Error",
             text=message,
-            buttons=[MDButtonText(text="OK", on_release=lambda x: x.parent.parent.dismiss())]
+            buttons=[MDFlatButton(text="OK", on_release=lambda x: x.parent.parent.dismiss())]
         ).open()
+
+# Example usage in the file
+button = MDRaisedButton(text="Submit")
+flat_button = MDFlatButton(text="Cancel")

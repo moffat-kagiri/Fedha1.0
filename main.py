@@ -6,7 +6,7 @@ from kivymd.uix.screen import MDScreen
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
 from kivymd.uix.dialog import MDDialog
-from kivymd.uix.button import MDButton, MDButtonText
+from kivymd.uix.button import MDRaisedButton, MDFlatButton
 from kivymd.uix.list import OneLineListItem
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.label import Label
@@ -15,7 +15,6 @@ from kivy.properties import ObjectProperty, StringProperty
 from datetime import datetime
 from kivymd.uix.card import MDCard
 from kivymd.uix.textfield import MDTextField
-from kivymd.uix.button import MDRaisedButton
 from kivy.uix.popup import Popup
 from kivymd.uix.pickers import MDDatePicker
 from kivy.metrics import dp
@@ -117,8 +116,8 @@ class TrackerApp(MDApp):
             title=title,
             text=message,
             buttons=[
-                MDButton(
-                    MDButtonText(text="OK"),
+                MDRaisedButton(
+                    text="OK",
                     on_release=lambda x: dialog.dismiss()
                 )
             ]
@@ -132,7 +131,7 @@ class TrackerApp(MDApp):
         MDDialog(
             title="Error",
             text=message,
-            buttons=[MDButtonText(text="OK", on_release=lambda x: x.parent.parent.dismiss())]
+            buttons=[MDFlatButton(text="OK", on_release=lambda x: x.parent.parent.dismiss())]
         ).open()
 
     def validate_monetary_input(self, value):
