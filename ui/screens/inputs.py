@@ -1,14 +1,14 @@
 # ui/screens/input.py
 from kivymd.uix.screen import MDScreen
 from kivymd.uix.dialog import MDDialog
-from kivy.properties import StringProperty, BooleanProperty
-from core.storage import DataManager
+from kivy.properties import StringProperty, BooleanProperty, ObjectProperty
+from core.storage.storage import DataManager
 from core.finance import LoanCalculator
 from ui.widgets.inputs import InputContent
-from kivymd.uix.button import MDButton
-from kivymd.uix.button import MDButtonText
+from kivymd.uix.button import MDRaisedButton, MDFlatButton
 from ui.widgets.cards import RatioCard, TransactionCard
 from ui.widgets.inputs import CurrencyInput, DateInput
+from kivy.lang import Builder
 
 from core.errors import ValidationError
 
@@ -23,11 +23,17 @@ class CurrencyInput:
 class InputScreen(MDScreen):
     current_input_type = StringProperty("income")
     show_loan_fields = BooleanProperty(False)
+    input_content = ObjectProperty(None)
     
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.data_manager = DataManager()
         self.dialog = None
+        Builder.load_file("ui/screens/inputs.kv")
+
+    def on_enter(self):
+        self.input_content = InputContent()
+        self.ids.input_container.add_widget(self.input_content)
 
     def show_input_dialog(self, input_type):
         """Show appropriate input form based on transaction type"""
@@ -47,8 +53,8 @@ class InputScreen(MDScreen):
             type="custom",
             content_cls=InputContent(),
             buttons=[
-                MDButtonText(text="CANCEL", on_release=self.close_dialog),
-                MDButtonText(text="SAVE", on_release=self.save_transaction)
+                MDFlatButton(text="CANCEL", on_release=self.close_dialog),
+                MDRaisedButton(text="SAVE", on_release=self.save_transaction)
             ]
         )
 
@@ -88,7 +94,7 @@ class InputScreen(MDScreen):
         """Save transaction to appropriate storage"""
         try:
             content = self.dialog.content_cls
-            amount = validate_monetary_input(content.ids.amount_input.text)
+            amount = self.validate_monetary_input(content.ids.amount_input.text)
             description = content.ids.description_input.text
             
             if self.current_input_type == "loan":
@@ -115,7 +121,7 @@ class InputScreen(MDScreen):
     def save_loan(self, content, amount, description):
         """Save loan with calculated APR"""
         term = int(content.ids.term_input.text)
-        instalment = validate_monetary_input(content.ids.instalment_input.text)
+        instalment = self.validate_monetary_input(content.ids.instalment_input.text)
         
         # Validate loan terms
         if instalment < (amount / term):
@@ -172,12 +178,12 @@ class InputScreen(MDScreen):
         MDDialog(
             title="Input Error",
             text=message,
-            buttons=[MDButtonText(text="OK", on_release=lambda x: x.parent.parent.dismiss())]
+            buttons=[MDFlatButton(text="OK", on_release=lambda x: x.parent.parent.dismiss())]
         ).open()
 
     def add_expense(self, expense_amount):
         # Validate the expense amount
-        expense_amount = validate_monetary_input(expense_amount)
+        expense_amount = self.validate_monetary_input(expense_amount)
         if expense_amount is None:
             self.show_error("Invalid expense amount")
             return

@@ -7,14 +7,10 @@ from kivymd.uix.button import MDRaisedButton, MDFlatButton
 from kivymd.uix.label import MDLabel
 from kivy.properties import DictProperty, NumericProperty
 from kivy.metrics import dp
-from core.storage import DataManager
+from core.storage.storage import DataManager
 from core.finance import LoanCalculator
 from ui.widgets.cards import RatioCard, TransactionCard
 from ui.widgets.inputs import CurrencyInput, DateInput
-
-# Then use:
-LoanCalculator.appraise_loan()
-LoanCalculator.calculate_remaining_balance()
 
 class LoanItem(MDCard):
     loan_data = DictProperty()
@@ -143,7 +139,3 @@ class LoansScreen(MDScreen):
             text=message,
             buttons=[MDFlatButton(text="OK", on_release=lambda x: x.parent.parent.dismiss())]
         ).open()
-
-# Example usage in the file
-button = MDRaisedButton(text="Submit")
-flat_button = MDFlatButton(text="Cancel")

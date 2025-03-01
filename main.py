@@ -1,4 +1,4 @@
-from kivy.logger import Logger  # Corrected import
+from kivy.logger import Logger
 import os
 import csv
 from kivymd.app import MDApp
@@ -23,22 +23,20 @@ from kivymd.uix.label import MDLabel
 from threading import Thread
 
 from ui.screens import HomeScreen, LoansScreen, InputScreen, SummariesScreen
-from android.permissions import AndroidPermissions
-from core.storage import DataManager, CSVManager, authenticate_google_drive, upload_file_to_drive, get_storage_path
+from android.permissions import AndroidPermissions, request_android_permissions, check_android_permission
+from core.storage import DataManager, CSVManager, get_storage_path
+from core.services.gdrive_service import GoogleDriveService
 from core.errors import StorageError
 from android.storage import get_app_path
 from core.finance import LoanCalculator, FinanceError, CalculationError, ValidationError
 from ui.screens.budget import BudgetScreen
-
-from android.storage import get_app_path
-from core.storage import DataManager, CSVManager
 
 class TrackerApp(MDApp):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.data_manager = DataManager(get_storage_path=get_app_path)
         self.permissions = AndroidPermissions()
-        self.gdrive = None  # Initialize Google Drive client
+        self.gdrive_service = None  # Initialize Google Drive service
         self.screen_manager = ScreenManager()  # Initialize screen manager
 
     def build(self):
@@ -58,6 +56,11 @@ class TrackerApp(MDApp):
     def initialize_app(self):
         """Called after permissions are granted"""
         Logger.info("App: Initializing after permissions granted")
+        # Initialize Google Drive service
+        self.gdrive_service = GoogleDriveService(
+            credentials_path=get_app_path("gdrive_creds.json"),
+            get_storage_path=get_storage_path
+        )
         # Initialize your app components here
 
     def register_screens(self):
@@ -67,7 +70,7 @@ class TrackerApp(MDApp):
         self.screen_manager.add_widget(InputScreen(name='input'))
 
     def save_data(self, data):
-        if not self.permissions.check_permissions():
+        if not check_android_permission('android.permission.WRITE_EXTERNAL_STORAGE'):
             self.show_warning_dialog(
                 title="Permissions Required",
                 message="Storage access is required to save data."
@@ -79,7 +82,7 @@ class TrackerApp(MDApp):
         return True
 
     def sync_with_drive(self):
-        if not self.permissions.check_permissions():
+        if not check_android_permission('android.permission.INTERNET'):
             self.show_warning_dialog(
                 title="Permissions Required",
                 message="Internet access is required for Google Drive sync."
@@ -91,8 +94,8 @@ class TrackerApp(MDApp):
         
         def _sync():
             try:
-                if not self.gdrive:
-                    self.gdrive = authenticate_google_drive()
+                if not self.gdrive_service:
+                    raise Exception("Google Drive service is not initialized")
                 
                 files = {
                     "expenses.csv": "DRIVE_FOLDER_ID_1",
@@ -100,8 +103,7 @@ class TrackerApp(MDApp):
                 }
                 
                 for fname, folder_id in files.items():
-                    local_path = get_storage_path(fname)
-                    upload_file_to_drive(self.gdrive, local_path, folder_id)
+                    self.gdrive_service.sync_to_drive(fname, folder_id)
                     
                 self.show_toast("Sync completed successfully")
             except Exception as e:

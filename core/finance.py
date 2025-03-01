@@ -1,10 +1,17 @@
-from core.errors import CalculationError
-from core.errors import FinanceError
+class FinanceError(Exception):
+    """Base class for finance-related exceptions"""
+    pass
 
+class CalculationError(FinanceError):
+    """Exception raised for errors in the loan calculation"""
+    pass
+
+class ValidationError(FinanceError):
+    """Exception raised for validation errors"""
+    pass
 
 class LoanCalculator:
     @staticmethod
-    # Calculate APR and Total Interest
     def appraise_loan(principal, monthly_instalment, term_months, max_iter=100, tol=1e-6):
         try:
             def annuity_pv(i):
@@ -22,8 +29,6 @@ class LoanCalculator:
         except ZeroDivisionError:
             raise CalculationError("APR") from None
     
-    @staticmethod
-
     @staticmethod
     def calculate_remaining_balance(principal, apr, payments_made, term_months):
         """

@@ -1,13 +1,12 @@
 # ui/screens/summaries.py
+from kivy.uix.boxlayout import BoxLayout
+from kivy_garden.graph import Graph, LinePlot, BarPlot
 from kivymd.uix.screen import MDScreen
-from kivymd.uix.boxlayout import MDLineChart, MDBarChart
 from kivymd.uix.card import MDCard
 from kivymd.uix.dialog import MDDialog
-from kivymd.uix.button import MDButton
-from kivymd.uix.button import MDButtonText
-from kivy.properties import StringProperty, NumericProperty
-from kivy.properties import DictProperty
-from core.storage import DataManager
+from kivymd.uix.button import MDRaisedButton, MDFlatButton
+from kivy.properties import StringProperty, NumericProperty, DictProperty
+from core.storage.storage import DataManager
 from datetime import datetime
 from ui.widgets.cards import RatioCard, TransactionCard
 from ui.widgets.inputs import CurrencyInput, DateInput
@@ -53,33 +52,39 @@ class SummariesScreen(MDScreen):
             self.ids.chart_container.remove_widget(self.chart)
             
         if chart_type == "bar":
-            self.chart = MDBarChart(
-                labels=True,
-                legend=True,
-                anim=True,
-                y_grid=True,
-                x_grid=True,
-                padding="24dp"
+            self.chart = Graph(
+                xlabel='Month', ylabel='Amount',
+                x_ticks_minor=1, x_ticks_major=1,
+                y_ticks_major=5000,
+                y_grid_label=True, x_grid_label=True,
+                padding=5, xlog=False, ylog=False,
+                x_grid=True, y_grid=True, xmin=-0.5, xmax=5.5, ymin=0, ymax=25000
             )
+            self.bar_plot = BarPlot(color=[0, 1, 0, 1])
+            self.chart.add_plot(self.bar_plot)
         else:
-            self.chart = MDLineChart(
-                labels=True,
-                legend=True,
-                anim=True,
-                y_grid=True,
-                x_grid=True,
-                padding="24dp"
+            self.chart = Graph(
+                xlabel='Month', ylabel='Amount',
+                x_ticks_minor=1, x_ticks_major=1,
+                y_ticks_major=5000,
+                y_grid_label=True, x_grid_label=True,
+                padding=5, xlog=False, ylog=False,
+                x_grid=True, y_grid=True, xmin=-0.5, xmax=5.5, ymin=0, ymax=25000
             )
+            self.line_plot = LinePlot(line_width=1.5, color=[1, 0, 0, 1])
+            self.chart.add_plot(self.line_plot)
             
         # Add chart data (example with 6 months history)
         months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-        income_data = [15000, 18000, 16500, 21000, 19500, 23000]
-        expenses_data = [12000, 14000, 13000, 16000, 15000, 17000]
+        income_data = [(i, val) for i, val in enumerate([15000, 18000, 16500, 21000, 19500, 23000])]
+        expenses_data = [(i, val) for i, val in enumerate([12000, 14000, 13000, 16000, 15000, 17000])]
         
-        self.chart.add_data_collection("Income", income_data, [0.2, 0.5, 0.8, 1])
-        self.chart.add_data_collection("Expenses", expenses_data, [0.8, 0.2, 0.2, 1])
+        if chart_type == "bar":
+            self.bar_plot.points = income_data
+        else:
+            self.line_plot.points = income_data
+        
         self.chart.x_labels = months
-        
         self.ids.chart_container.add_widget(self.chart)
 
     def show_detailed_statement(self, category):
@@ -100,7 +105,7 @@ class SummariesScreen(MDScreen):
             items=[OneLineListItem(text=f"{t['Date']} - {t['Description']}: KES {t['Amount']}") 
                   for t in transactions],
             buttons=[
-                MDButtonText(text="CLOSE", on_release=lambda x: dialog.dismiss())
+                MDFlatButton(text="CLOSE", on_release=lambda x: dialog.dismiss())
             ]
         )
         dialog.open()

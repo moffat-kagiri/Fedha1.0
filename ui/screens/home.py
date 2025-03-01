@@ -4,11 +4,13 @@ from kivymd.uix.card import MDCard
 from kivymd.uix.label import MDLabel
 from kivymd.uix.button import MDRoundFlatButton
 from kivy.properties import NumericProperty, StringProperty
-from core.storage import DataManager
+from core.storage.storage import DataManager
 from ui.widgets.cards import RatioCard, TransactionCard
 from ui.widgets.inputs import CurrencyInput, DateInput
 from kivymd.uix.progressbar import MDProgressBar
 from kivymd.uix.button import MDRaisedButton
+from kivymd.uix.boxlayout import MDBoxLayout
+from android.storage import get_app_path
 
 class RatioCard(MDCard):
     """Custom card component for financial ratios"""
@@ -20,10 +22,11 @@ class RatioCard(MDCard):
 class HomeScreen(MDScreen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.data_manager = DataManager()
+        self.data_manager = DataManager(get_storage_path=get_app_path)
         self.budget_bar = MDProgressBar()
         self.budget_labels = MDLabel()
         self.build_ui()
+
     def on_enter(self):
         """Update data when screen becomes visible"""
         self.update_overview()

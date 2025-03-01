@@ -47,3 +47,9 @@ class CategorySelect(MDBoxLayout):
     
     def select_category(self, category):
         self.selected_category = category
+
+class InputContent(MDBoxLayout):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.orientation = 'vertical'
+        self.add_widget(MDTextField(hint_text="Enter some text"))
