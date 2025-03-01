@@ -1,0 +1,29 @@
+# ui/screens/budget.kv
+<BudgetScreen>:
+    MDBoxLayout:
+        orientation: "vertical"
+        padding: "16dp"
+        spacing: "16dp"
+
+        MDTextField:
+            id: salary_input
+            hint_text: "Monthly Salary"
+            input_filter: "float"
+
+        MDTextField:
+            id: savings_input
+            hint_text: "Fixed Savings"
+            input_filter: "float"
+
+        MDTextField:
+            id: expense_input
+            hint_text: "Fixed Expense"
+            input_filter: "float"
+
+        MDRaisedButton:
+            text: "Add Expense"
+            on_release: root.add_expense()
+
+        MDRaisedButton:
+            text: "Submit Budget"
+            on_release: root.submit_budget()

@@ -1,0 +1,4 @@
+bin/.buildozer/myenv/*.apk
+libpng-1.6.37/
+libpng-1.6.37.tar.xz
+/libpng
