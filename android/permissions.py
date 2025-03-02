@@ -1,6 +1,5 @@
 from kivy.logger import Logger
-from jnius import autoclass, cast
-from jnius import JavaException
+from jnius import autoclass, JavaException
 
 class AndroidPermissions:
     """Handles Android runtime permissions"""

@@ -3,9 +3,15 @@ from kivymd.uix.screen import MDScreen
 from kivymd.uix.textfield import MDTextField
 from kivymd.uix.button import MDRaisedButton
 from kivymd.uix.boxlayout import MDBoxLayout
+from kivy.properties import ObjectProperty
+from kivymd.uix.dialog import MDDialog
 from core.budget import Budget
 
 class BudgetScreen(MDScreen):
+    salary_input = ObjectProperty(None)
+    expenses_input = ObjectProperty(None)
+    savings_input = ObjectProperty(None)
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.budget = Budget()
@@ -13,38 +19,38 @@ class BudgetScreen(MDScreen):
 
     def build_ui(self):
         self.layout = MDBoxLayout(orientation="vertical", padding="16dp", spacing="16dp")
-
-        # Salary Input
-        self.salary_input = MDTextField(hint_text="Monthly Salary", input_filter="float")
+        
+        self.salary_input = MDTextField(hint_text="Enter your salary")
+        self.expenses_input = MDTextField(hint_text="Enter your expenses")
+        self.savings_input = MDTextField(hint_text="Enter your savings")
+        
+        submit_button = MDRaisedButton(text="Submit", on_release=self.submit_budget)
+        
         self.layout.add_widget(self.salary_input)
-
-        # Fixed Savings Input
-        self.savings_input = MDTextField(hint_text="Fixed Savings", input_filter="float")
+        self.layout.add_widget(self.expenses_input)
         self.layout.add_widget(self.savings_input)
-
-        # Fixed Expenses Input
-        self.expense_input = MDTextField(hint_text="Fixed Expense", input_filter="float")
-        self.layout.add_widget(self.expense_input)
-
-        # Add Expense Button
-        self.add_expense_button = MDRaisedButton(text="Add Expense", on_release=self.add_expense)
-        self.layout.add_widget(self.add_expense_button)
-
-        # Submit Button
-        self.submit_button = MDRaisedButton(text="Submit Budget", on_release=self.submit_budget)
-        self.layout.add_widget(self.submit_button)
-
+        self.layout.add_widget(submit_button)
+        
         self.add_widget(self.layout)
 
-    def add_expense(self, instance):
-        expense = self.expense_input.text
-        if expense:
-            self.budget.add_fixed_expense(expense)
-            self.expense_input.text = ""  # Clear input field
-            print(f"Added Expense: {expense}")
-
     def submit_budget(self, instance):
-        self.budget.salary = float(self.salary_input.text)
-        self.budget.fixed_savings = float(self.savings_input.text)
-        print("Budget Submitted:", self.budget.__dict__)
-        self.manager.get_screen("home").update_budget_bar(self.budget)
+        try:
+            salary = float(self.salary_input.text) if self.salary_input.text else 0.0
+            expenses = float(self.expenses_input.text) if self.expenses_input.text else 0.0
+            savings = float(self.savings_input.text) if self.savings_input.text else 0.0
+            
+            self.budget.salary = salary
+            self.budget.expenses = expenses
+            self.budget.savings = savings
+            
+            # Perform further actions with the budget data
+        except ValueError as e:
+            self.show_error(f"Invalid input: {str(e)}")
+
+    def show_error(self, message):
+        dialog = MDDialog(
+            title="Error",
+            text=message,
+            buttons=[MDRaisedButton(text="OK", on_release=lambda x: dialog.dismiss())]
+        )
+        dialog.open()

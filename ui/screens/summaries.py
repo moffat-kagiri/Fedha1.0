@@ -4,12 +4,15 @@ from kivy_garden.graph import Graph, LinePlot, BarPlot
 from kivymd.uix.screen import MDScreen
 from kivymd.uix.card import MDCard
 from kivymd.uix.dialog import MDDialog
-from kivymd.uix.button import MDRaisedButton, MDFlatButton
+from kivymd.uix.button import MDRaisedButton, MDFlatButton, MDRoundFlatButton
 from kivy.properties import StringProperty, NumericProperty, DictProperty
 from core.storage.storage import DataManager
 from datetime import datetime
 from ui.widgets.cards import RatioCard, TransactionCard
 from ui.widgets.inputs import CurrencyInput, DateInput
+from kivymd.uix.progressbar import MDProgressBar
+from kivymd.uix.boxlayout import MDBoxLayout
+from android.storage import get_app_path
 
 class SummaryCard(MDCard):
     """Reusable card component for summary items"""
@@ -21,8 +24,15 @@ class SummaryCard(MDCard):
 class SummariesScreen(MDScreen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.data_manager = DataManager()
+        self.data_manager = DataManager(get_storage_path=get_app_path)
         self.chart = None
+        self.build_ui()
+        
+    def build_ui(self):
+        self.layout = MDBoxLayout(orientation="vertical", padding="16dp", spacing="16dp")
+        
+        # Add your UI components here
+        self.add_widget(self.layout)
         
     def on_enter(self):
         """Refresh data when screen becomes visible"""

@@ -3,14 +3,17 @@ from kivymd.uix.screen import MDScreen
 from kivymd.uix.card import MDCard
 from kivymd.uix.menu import MDDropdownMenu
 from kivymd.uix.dialog import MDDialog
-from kivymd.uix.button import MDRaisedButton, MDFlatButton
+from kivymd.uix.button import MDRaisedButton, MDFlatButton, MDRoundFlatButton
 from kivymd.uix.label import MDLabel
-from kivy.properties import DictProperty, NumericProperty
+from kivy.properties import DictProperty, NumericProperty, StringProperty
 from kivy.metrics import dp
 from core.storage.storage import DataManager
 from core.finance import LoanCalculator
 from ui.widgets.cards import RatioCard, TransactionCard
 from ui.widgets.inputs import CurrencyInput, DateInput
+from kivymd.uix.progressbar import MDProgressBar
+from kivymd.uix.boxlayout import MDBoxLayout
+from android.storage import get_app_path
 
 class LoanItem(MDCard):
     loan_data = DictProperty()
@@ -65,8 +68,14 @@ class LoanItem(MDCard):
 class LoansScreen(MDScreen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.data_manager = DataManager()
-        self.sort_menu = None
+        self.data_manager = DataManager(get_storage_path=get_app_path)
+        self.build_ui()
+        
+    def build_ui(self):
+        self.layout = MDBoxLayout(orientation="vertical", padding="16dp", spacing="16dp")
+        
+        # Add your UI components here
+        self.add_widget(self.layout)
         
     def on_enter(self):
         """Load loans when screen becomes visible"""

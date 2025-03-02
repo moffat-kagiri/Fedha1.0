@@ -2,6 +2,7 @@
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.textfield import MDTextField
 from kivy.properties import BooleanProperty, StringProperty, NumericProperty
+from kivy.uix.boxlayout import BoxLayout
 
 class CurrencyInput(MDTextField):
     """Currency input field with validation"""
@@ -48,8 +49,11 @@ class CategorySelect(MDBoxLayout):
     def select_category(self, category):
         self.selected_category = category
 
-class InputContent(MDBoxLayout):
+class InputContent(BoxLayout):
+    hint_text = StringProperty("")
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.orientation = 'vertical'
         self.add_widget(MDTextField(hint_text="Enter some text"))
+        # Additional initialization code
