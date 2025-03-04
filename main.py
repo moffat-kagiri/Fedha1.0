@@ -26,7 +26,6 @@ from ui.screens import HomeScreen, LoansScreen, InputScreen, SummariesScreen
 from android.permissions import AndroidPermissions, request_android_permissions, check_android_permission
 from core.storage import DataManager, CSVManager, get_storage_path
 from core.services.gdrive_service import GoogleDriveService
-from core.errors import StorageError
 from android.storage import get_app_path
 from core.finance import LoanCalculator, FinanceError, CalculationError, ValidationError
 from ui.screens.budget import BudgetScreen

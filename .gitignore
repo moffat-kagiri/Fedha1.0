@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 bin/.buildozer/myenv/*.apk
 libpng-1.6.37/
 libpng-1.6.37.tar.xz
 /libpng
+=======
+bin/.buildozer/myenv/*.apk
+libpng-1.6.37/
+libpng-1.6.37.tar.xz
+/libpng
+>>>>>>> 3b7a10b89c324aebda56990f0bbd9fcbcb1f2d1f
