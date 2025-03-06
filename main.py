@@ -40,6 +40,7 @@ class TrackerApp(MDApp):
         self.screen_manager = ScreenManager()  # Initialize screen manager
 
     def build(self):
+        Logger.info("App: Building the application")
         Builder.load_file("ui/widgets/cards.kv")
         Builder.load_file("ui/widgets/inputs.kv")
         self.screen_manager.add_widget(BudgetScreen(name="budget"))
@@ -64,6 +65,7 @@ class TrackerApp(MDApp):
         # Initialize your app components here
 
     def register_screens(self):
+        Logger.info("App: Registering screens")
         self.screen_manager.add_widget(HomeScreen(name='home'))
         self.screen_manager.add_widget(LoansScreen(name='loans'))
         self.screen_manager.add_widget(SummariesScreen(name='summaries'))

@@ -3,7 +3,7 @@
     <option name="ALTERNATIVE_JRE_PATH" value="Android API 35, extension level 13 Platform" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="MAIN_CLASS_NAME" value="sun.launcher.LauncherHelper$FXHelper" />
-    <module name="SDL" />
+    <module name="Tracker" />
     <option name="PROGRAM_PARAMETERS" value="$MODULE_DIR$" />
     <method v="2">
       <option name="Make" enabled="true" />
