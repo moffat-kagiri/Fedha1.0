@@ -52,6 +52,7 @@ class TrackerApp(MDApp):
         self.permissions.ensure_permissions(self.initialize_app)
         self.register_screens()  # Register screens before returning
         self.title = "Tracker"
+        self.screen_manager.current = 'home'
         return self.screen_manager
 
     def initialize_app(self):
