@@ -28,7 +28,6 @@ uname -v = #1 SMP Tue Nov 5 00:21:55 UTC 2024
 /bin/universe          = unknown
 
 PATH: /home/moffat-kagiri/.buildozer/android/platform/apache-ant-1.9.4/bin
-PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash
 PATH: /home/moffat-kagiri/Projects/Fedha/myenv/bin
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools
@@ -36,9 +35,17 @@ PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/emulator
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools/bin
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools
-PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash
+PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash
 PATH: /home/moffat-kagiri/Projects/Fedha/myenv/bin
-PATH: /home/moffat-kagiri/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/bin/remote-cli
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/emulator
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools/bin
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools
+PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash
+PATH: /home/moffat-kagiri/Projects/Fedha/myenv/bin
+PATH: /home/moffat-kagiri/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/bin/remote-cli
 PATH: /home/moffat-kagiri/.local/bin
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools
@@ -66,12 +73,23 @@ PATH: /mnt/c/Program Files/Git/cmd
 PATH: /mnt/c/Program Files/nodejs/
 PATH: /mnt/c/Program Files/Go/bin
 PATH: /mnt/c/Program Files/GitHub CLI/
+PATH: /mnt/c/Program Files/Tesseract-OCR
+PATH: /mnt/c/Program Files/Tesseract-OCR/tesseract.exe
+PATH: /mnt/c/Program Files/Poppler/poppler-24.08.0/Library/bin/
+PATH: /mnt/c/Program Files/Poppler
+PATH: /mnt/c/ProgramData/miniconda3
+PATH: /mnt/c/ProgramData/miniconda3/Scripts
+PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Roaming/Python/Python312/Scripts
+PATH: /mnt/c/Program Files/dotnet/
+PATH: /mnt/c/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Microsoft/WindowsApps
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Programs/Microsoft VS Code/bin
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/GitHubDesktop/bin
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Roaming/npm
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Microsoft/WinGet/Links
 PATH: /mnt/c/Users/MOFFAT KAGIRI/go/bin
+PATH: /mnt/c/Users/MOFFAT KAGIRI/.dotnet/tools
+PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Programs/Ollama
 PATH: /snap/bin
 PATH: /home/moffat-kagiri/.local/bin
 
@@ -4627,7 +4645,7 @@ conftest.c: In function 'main':
 conftest.c:91:8: warning: implicit declaration of function 'makedev' [-Wimplicit-function-declaration]
    91 | return makedev(0, 0);
       |        ^~~~~~~
-/usr/bin/ld: /tmp/ccOGuVC4.o: in function `main':
+/usr/bin/ld: /tmp/cczTstrW.o: in function `main':
 conftest.c:(.text+0x18): undefined reference to `makedev'
 collect2: error: ld returned 1 exit status
 configure:9391: $? = 1
@@ -7593,7 +7611,7 @@ configure:12343: checking for LIBNSL
 configure:12485: result: no
 configure:12495: checking for library containing yp_match
 configure:12526: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/ccDfIBXr.o: in function `main':
+/usr/bin/ld: /tmp/ccASzDsN.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `yp_match'
 collect2: error: ld returned 1 exit status
 configure:12526: $? = 1
@@ -9127,7 +9145,7 @@ configure:15227: $? = 0
 configure:15227: result: yes
 configure:15227: checking for explicit_memset
 configure:15227: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/ccfl7sai.o: in function `main':
+/usr/bin/ld: /tmp/ccPbI9ph.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `explicit_memset'
 collect2: error: ld returned 1 exit status
 configure:15227: $? = 1
@@ -9368,7 +9386,7 @@ configure:15227: $? = 0
 configure:15227: result: yes
 configure:15227: checking for fdwalk
 configure:15227: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/cced1esZ.o: in function `main':
+/usr/bin/ld: /tmp/cc0Te0uM.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `fdwalk'
 collect2: error: ld returned 1 exit status
 configure:15227: $? = 1
@@ -9602,7 +9620,7 @@ configure:15227: $? = 0
 configure:15227: result: yes
 configure:15227: checking for fork1
 configure:15227: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/ccogASVT.o: in function `main':
+/usr/bin/ld: /tmp/cc1aYxQp.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `fork1'
 collect2: error: ld returned 1 exit status
 configure:15227: $? = 1
@@ -9931,7 +9949,7 @@ configure:15227: $? = 0
 configure:15227: result: yes
 configure:15227: checking for _getpty
 configure:15227: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/cc9uo3MM.o: in function `main':
+/usr/bin/ld: /tmp/ccTxp7aZ.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `_getpty'
 collect2: error: ld returned 1 exit status
 configure:15227: $? = 1
@@ -10226,7 +10244,7 @@ configure:15227: $? = 0
 configure:15227: result: yes
 configure:15227: checking for getwd
 configure:15227: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/cckyacTl.o: in function `main':
+/usr/bin/ld: /tmp/ccySfLIO.o: in function `main':
 conftest.c:(.text+0xe): warning: the `getwd' function is dangerous and should not be used.
 configure:15227: $? = 0
 configure:15227: result: yes
@@ -10340,7 +10358,7 @@ configure:15227: $? = 0
 configure:15227: result: yes
 configure:15227: checking for plock
 configure:15227: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/cci4pMvv.o: in function `main':
+/usr/bin/ld: /tmp/ccCMSD9F.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `plock'
 collect2: error: ld returned 1 exit status
 configure:15227: $? = 1
@@ -10666,7 +10684,7 @@ configure:15227: $? = 0
 configure:15227: result: yes
 configure:15227: checking for pthread_init
 configure:15227: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/cck3E1Vp.o: in function `main':
+/usr/bin/ld: /tmp/ccY3WWMd.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `pthread_init'
 collect2: error: ld returned 1 exit status
 configure:15227: $? = 1
@@ -11001,7 +11019,7 @@ configure:15227: $? = 0
 configure:15227: result: yes
 configure:15227: checking for rtpSpawn
 configure:15227: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/ccfZf3pW.o: in function `main':
+/usr/bin/ld: /tmp/cc3s378a.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `rtpSpawn'
 collect2: error: ld returned 1 exit status
 configure:15227: $? = 1
@@ -11513,7 +11531,7 @@ configure:15227: $? = 0
 configure:15227: result: yes
 configure:15227: checking for tempnam
 configure:15227: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/ccoxl48v.o: in function `main':
+/usr/bin/ld: /tmp/cciGnUFp.o: in function `main':
 conftest.c:(.text+0xe): warning: the use of `tempnam' is dangerous, better use `mkstemp'
 configure:15227: $? = 0
 configure:15227: result: yes
@@ -11531,13 +11549,13 @@ configure:15227: $? = 0
 configure:15227: result: yes
 configure:15227: checking for tmpnam
 configure:15227: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/ccwuTyMe.o: in function `main':
+/usr/bin/ld: /tmp/cc1rJZB0.o: in function `main':
 conftest.c:(.text+0xe): warning: the use of `tmpnam' is dangerous, better use `mkstemp'
 configure:15227: $? = 0
 configure:15227: result: yes
 configure:15227: checking for tmpnam_r
 configure:15227: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/ccIgvUlc.o: in function `main':
+/usr/bin/ld: /tmp/cc9KZ71V.o: in function `main':
 conftest.c:(.text+0xe): warning: the use of `tmpnam_r' is dangerous, better use `mkstemp'
 configure:15227: $? = 0
 configure:15227: result: yes
@@ -12779,7 +12797,7 @@ conftest.c: In function 'main':
 conftest.c:354:6: warning: implicit declaration of function 'chflags' [-Wimplicit-function-declaration]
   354 |   if(chflags(argv[0], 0) != 0)
       |      ^~~~~~~
-/usr/bin/ld: /tmp/cckGmkSO.o: in function `main':
+/usr/bin/ld: /tmp/ccfsTHUI.o: in function `main':
 conftest.c:(.text+0x28): warning: chflags is not implemented and will always fail
 configure:16110: $? = 0
 configure:16110: ./conftest
@@ -13151,7 +13169,7 @@ conftest.c: In function 'main':
 conftest.c:354:6: warning: implicit declaration of function 'lchflags' [-Wimplicit-function-declaration]
   354 |   if(lchflags(argv[0], 0) != 0)
       |      ^~~~~~~~
-/usr/bin/ld: /tmp/ccv9UVDP.o: in function `main':
+/usr/bin/ld: /tmp/ccN7qv1q.o: in function `main':
 conftest.c:(.text+0x28): undefined reference to `lchflags'
 collect2: error: ld returned 1 exit status
 configure:16159: $? = 1
@@ -13660,7 +13678,7 @@ configure:17968: $? = 0
 configure:17968: result: yes
 configure:18068: checking for fseek64
 configure:18068: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/cc3K1pLn.o: in function `main':
+/usr/bin/ld: /tmp/ccisYxXh.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `fseek64'
 collect2: error: ld returned 1 exit status
 configure:18068: $? = 1
@@ -14089,7 +14107,7 @@ configure:18068: $? = 0
 configure:18068: result: yes
 configure:18068: checking for ftell64
 configure:18068: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/cczlA9RK.o: in function `main':
+/usr/bin/ld: /tmp/ccPVy5F6.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `ftell64'
 collect2: error: ld returned 1 exit status
 configure:18068: $? = 1
@@ -15333,7 +15351,7 @@ configure:18153: checking for LIBCRYPT
 configure:18291: result: no
 configure:18300: checking for library containing crypt_r
 configure:18331: gcc -o conftest    conftest.c -ldl  >&5
-/usr/bin/ld: /tmp/ccPxpI0d.o: in function `main':
+/usr/bin/ld: /tmp/ccEURftc.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `crypt_r'
 collect2: error: ld returned 1 exit status
 configure:18331: $? = 1

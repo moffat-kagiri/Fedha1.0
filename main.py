@@ -58,6 +58,7 @@ class TrackerApp(MDApp):
     def initialize_app(self):
         """Called after permissions are granted"""
         Logger.info("App: Initializing after permissions granted")
+        Logger.info("App: Initializing Google Drive service")
         # Initialize Google Drive service
         self.gdrive_service = GoogleDriveService(
             credentials_path=get_app_path("gdrive_creds.json"),

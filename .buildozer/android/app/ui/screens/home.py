@@ -2,14 +2,12 @@
 from kivymd.uix.screen import MDScreen
 from kivymd.uix.card import MDCard
 from kivymd.uix.label import MDLabel
-from kivymd.uix.button import MDRoundFlatButton
-from kivy.properties import NumericProperty, StringProperty
-from core.storage.storage import DataManager
-from ui.widgets.cards import RatioCard, TransactionCard
-from ui.widgets.inputs import CurrencyInput, DateInput
-from kivymd.uix.progressbar import MDProgressBar
 from kivymd.uix.button import MDRaisedButton
 from kivymd.uix.boxlayout import MDBoxLayout
+from kivymd.uix.progressbar import MDProgressBar
+from kivy.properties import NumericProperty, StringProperty, ListProperty
+from kivy.logger import Logger
+from core.storage.storage import DataManager
 from android.storage import get_app_path
 
 class RatioCard(MDCard):
@@ -18,6 +16,17 @@ class RatioCard(MDCard):
     value = NumericProperty(0)
     icon = StringProperty("cash")
     theme_color = StringProperty("Primary")
+    bg_color = ListProperty([1, 1, 1, 1])  # Add this line
+
+    def on_theme_color(self, instance, value):
+        """Update background color when theme color changes"""
+        colors = {
+            "Red": [0.8, 0.2, 0.2, 1],
+            "Green": [0.2, 0.8, 0.2, 1],
+            "Blue": [0.2, 0.2, 0.8, 1],
+            "Primary": [0.12, 0.58, 0.95, 1]
+        }
+        self.bg_color = colors.get(value, [1, 1, 1, 1])
 
 class HomeScreen(MDScreen):
     def __init__(self, **kwargs):
@@ -33,35 +42,83 @@ class HomeScreen(MDScreen):
 
     def update_overview(self):
         """Refresh all financial data"""
-        ratios = self.data_manager.calculate_ratios()
-        
-        # Update ratio cards
-        self.ids.expenses_card.value = ratios['expenses_ratio']
-        self.ids.debt_card.value = ratios['debt_ratio']
-        self.ids.savings_card.value = ratios['savings_ratio']
-        
-        # Update quick stats
-        overview = self.data_manager.transactions.generate_monthly_overview()
-        self.ids.income_label.text = f"KES {overview['income']:,.2f}"
-        self.ids.expenses_label.text = f"KES {overview['expenses']:,.2f}"
-
+        try:
+            ratios = self.data_manager.calculate_ratios()
+            
+            # Update ratio cards with direct references
+            self.expenses_card.value = ratios['expenses']
+            self.debt_card.value = ratios['savings']
+            self.savings_card.value = ratios['surplus']
+            
+            # Update quick stats if they exist
+            overview = self.data_manager.transactions.generate_monthly_overview()
+            if hasattr(self.ids, 'income_label'):
+                self.ids.income_label.text = f"KES {overview['income']:,.2f}"
+            if hasattr(self.ids, 'expenses_label'):
+                self.ids.expenses_label.text = f"KES {overview['expenses']:,.2f}"
+        except Exception as e:
+            Logger.error(f"Error updating overview: {str(e)}")
+    
     def show_detailed_report(self):
-        """Navigate to detailed reports screen"""
+        """Navigate to detailed reports screen."""
         self.manager.current = 'summaries'
 
     def build_ui(self):
+        """Initialize and arrange UI components"""
         self.layout = MDBoxLayout(orientation="vertical", padding="16dp", spacing="16dp")
+        
+        # Create ratio cards row
+        cards_layout = MDBoxLayout(
+            orientation="horizontal",
+            spacing="8dp",
+            size_hint_y=None,
+            height="120dp"
+        )
+        
+        # Expenses card
+        self.expenses_card = RatioCard(
+            title="Expenses",
+            icon="cash-minus",
+            theme_color="Red"
+        )
+        self.expenses_card.id = 'expenses_card'
+        
+        # Savings card
+        self.savings_card = RatioCard(
+            title="Savings",
+            icon="piggy-bank",
+            theme_color="Green"
+        )
+        self.savings_card.id = 'savings_card'
+        
+        # Debt card
+        self.debt_card = RatioCard(
+            title="Debt",
+            icon="credit-card",
+            theme_color="Blue"
+        )
+        self.debt_card.id = 'debt_card'
+        
+        # Add cards to layout
+        cards_layout.add_widget(self.expenses_card)
+        cards_layout.add_widget(self.savings_card)
+        cards_layout.add_widget(self.debt_card)
+        
+        # Add cards layout to main layout
+        self.layout.add_widget(cards_layout)
         
         # Budget Bar
         self.layout.add_widget(self.budget_bar)
         self.layout.add_widget(self.budget_labels)
         
-        self.add_widget(self.layout)
+        # Budget Button
         self.budget_button = MDRaisedButton(
             text="Set Budget",
             on_release=self.go_to_budget
         )
         self.layout.add_widget(self.budget_button)
+        
+        self.add_widget(self.layout)
     
     def go_to_budget(self, instance):
         self.manager.current = "budget"
