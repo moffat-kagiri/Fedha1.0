@@ -40,8 +40,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-THahIo"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-THahIo"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-f8ZJKr"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-f8ZJKr"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -59,19 +59,19 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-THahIo'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-f8ZJKr'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fbb15/fast
-        make -j8  -f CMakeFiles/cmTC_fbb15.dir/build.make CMakeFiles/cmTC_fbb15.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-THahIo'
-        Building C object CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4a38a/fast
+        make -j8  -f CMakeFiles/cmTC_4a38a.dir/build.make CMakeFiles/cmTC_4a38a.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-f8ZJKr'
+        Building C object CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Android (8490178, based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)
         Target: armv7-none-linux-android19
         Thread model: posix
         InstalledDir: /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin
          (in-process)
-         "/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple thumbv7-none-linux-android19 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=1 -target-cpu generic -target-feature +soft-float-abi -target-feature +vfp2 -target-feature +vfp2sp -target-feature +vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature +vfp3sp -target-feature -fp16 -target-feature -vfp4 -target-feature -vfp4d16 -target-feature -vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature -fp-armv8d16 -target-feature -fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature +d32 -target-feature +neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs-linux -mfloat-abi soft -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-THahIo -resource-dir /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6 -dependency-file CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include -internal-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-THahIo -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+         "/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple thumbv7-none-linux-android19 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=1 -target-cpu generic -target-feature +soft-float-abi -target-feature +vfp2 -target-feature +vfp2sp -target-feature +vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature +vfp3sp -target-feature -fp16 -target-feature -vfp4 -target-feature -vfp4d16 -target-feature -vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature -fp-armv8d16 -target-feature -fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature +d32 -target-feature +neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs-linux -mfloat-abi soft -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-f8ZJKr -resource-dir /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6 -dependency-file CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include -internal-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-f8ZJKr -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         clang -cc1 version 14.0.6 based upon LLVM 14.0.6git default target x86_64-unknown-linux-gnu
         ignoring nonexistent directory "/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
         #include "..." search starts here:
@@ -81,15 +81,15 @@ events:
          /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi
          /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
         End of search list.
-        Linking C executable cmTC_fbb15
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbb15.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections  -v CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o -o cmTC_fbb15 
+        Linking C executable cmTC_4a38a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a38a.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections  -v CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o -o cmTC_4a38a 
         Android (8490178, based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)
         Target: armv7-none-linux-android19
         Thread model: posix
         InstalledDir: /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin
-         "/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --warn-shared-textrel -z now -z relro -z max-page-size=4096 -X --hash-style=both --enable-new-dtags --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_fbb15 /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/crtbegin_dynamic.o -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/arm -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19 -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl -lc /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/crtend_android.o
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-THahIo'
+         "/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --warn-shared-textrel -z now -z relro -z max-page-size=4096 -X --hash-style=both --enable-new-dtags --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_4a38a /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/crtbegin_dynamic.o -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/arm -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19 -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl -lc /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/crtend_android.o
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-f8ZJKr'
         
       exitCode: 0
   -
@@ -123,19 +123,19 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-THahIo']
+        ignore line: [Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-f8ZJKr']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fbb15/fast]
-        ignore line: [make -j8  -f CMakeFiles/cmTC_fbb15.dir/build.make CMakeFiles/cmTC_fbb15.dir/build]
-        ignore line: [make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-THahIo']
-        ignore line: [Building C object CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4a38a/fast]
+        ignore line: [make -j8  -f CMakeFiles/cmTC_4a38a.dir/build.make CMakeFiles/cmTC_4a38a.dir/build]
+        ignore line: [make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-f8ZJKr']
+        ignore line: [Building C object CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Android (8490178  based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)]
         ignore line: [Target: armv7-none-linux-android19]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple thumbv7-none-linux-android19 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=1 -target-cpu generic -target-feature +soft-float-abi -target-feature +vfp2 -target-feature +vfp2sp -target-feature +vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature +vfp3sp -target-feature -fp16 -target-feature -vfp4 -target-feature -vfp4d16 -target-feature -vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature -fp-armv8d16 -target-feature -fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature +d32 -target-feature +neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs-linux -mfloat-abi soft -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-THahIo -resource-dir /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6 -dependency-file CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include -internal-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-THahIo -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple thumbv7-none-linux-android19 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=1 -target-cpu generic -target-feature +soft-float-abi -target-feature +vfp2 -target-feature +vfp2sp -target-feature +vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature +vfp3sp -target-feature -fp16 -target-feature -vfp4 -target-feature -vfp4d16 -target-feature -vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature -fp-armv8d16 -target-feature -fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature +d32 -target-feature +neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs-linux -mfloat-abi soft -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-f8ZJKr -resource-dir /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6 -dependency-file CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include -internal-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-f8ZJKr -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 14.0.6 based upon LLVM 14.0.6git default target x86_64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
         ignore line: [#include "..." search starts here:]
@@ -145,14 +145,14 @@ events:
         ignore line: [ /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi]
         ignore line: [ /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_fbb15]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbb15.dir/link.txt --verbose=1]
-        ignore line: [/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --fatal-warnings -Wl --gc-sections -Wl --no-undefined -Qunused-arguments -Wl --gc-sections  -v CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o -o cmTC_fbb15 ]
+        ignore line: [Linking C executable cmTC_4a38a]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a38a.dir/link.txt --verbose=1]
+        ignore line: [/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --fatal-warnings -Wl --gc-sections -Wl --no-undefined -Qunused-arguments -Wl --gc-sections  -v CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o -o cmTC_4a38a ]
         ignore line: [Android (8490178  based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)]
         ignore line: [Target: armv7-none-linux-android19]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin]
-        link line: [ "/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --warn-shared-textrel -z now -z relro -z max-page-size=4096 -X --hash-style=both --enable-new-dtags --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_fbb15 /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/crtbegin_dynamic.o -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/arm -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19 -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl -lc /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/crtend_android.o]
+        link line: [ "/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --warn-shared-textrel -z now -z relro -z max-page-size=4096 -X --hash-style=both --enable-new-dtags --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_4a38a /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/crtbegin_dynamic.o -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/arm -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19 -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib -L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl -lc /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/crtend_android.o]
           arg [/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/ld] ==> ignore
           arg [--sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
           arg [-pie] ==> ignore
@@ -170,7 +170,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/system/bin/linker] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_fbb15] ==> ignore
+          arg [cmTC_4a38a] ==> ignore
           arg [/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/crtbegin_dynamic.o] ==> obj [/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/crtbegin_dynamic.o]
           arg [-L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/arm] ==> dir [/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/arm]
           arg [-L/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19] ==> dir [/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19]
@@ -183,7 +183,7 @@ events:
           arg [--gc-sections] ==> ignore
           arg [--no-undefined] ==> ignore
           arg [--gc-sections] ==> ignore
-          arg [CMakeFiles/cmTC_fbb15.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_4a38a.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-arm-android.a] ==> lib [/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-arm-android.a]
           arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
           arg [-ldl] ==> lib [dl]
@@ -214,8 +214,8 @@ events:
     checks:
       - "Looking for sys/types.h"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-InKnVE"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-InKnVE"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WCxghM"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WCxghM"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -233,17 +233,17 @@ events:
       variable: "HAVE_SYS_TYPES_H"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-InKnVE'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WCxghM'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_477a1/fast
-        make -j8  -f CMakeFiles/cmTC_477a1.dir/build.make CMakeFiles/cmTC_477a1.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-InKnVE'
-        Building C object CMakeFiles/cmTC_477a1.dir/CheckIncludeFile.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_477a1.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_477a1.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_477a1.dir/CheckIncludeFile.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-InKnVE/CheckIncludeFile.c
-        Linking C executable cmTC_477a1
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_477a1.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_477a1.dir/CheckIncludeFile.c.o -o cmTC_477a1  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-InKnVE'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f1e82/fast
+        make -j8  -f CMakeFiles/cmTC_f1e82.dir/build.make CMakeFiles/cmTC_f1e82.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WCxghM'
+        Building C object CMakeFiles/cmTC_f1e82.dir/CheckIncludeFile.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_f1e82.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_f1e82.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_f1e82.dir/CheckIncludeFile.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WCxghM/CheckIncludeFile.c
+        Linking C executable cmTC_f1e82
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1e82.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_f1e82.dir/CheckIncludeFile.c.o -o cmTC_f1e82  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WCxghM'
         
       exitCode: 0
   -
@@ -255,8 +255,8 @@ events:
     checks:
       - "Looking for stdint.h"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1FcJrR"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1FcJrR"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gmy8RJ"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gmy8RJ"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -274,17 +274,17 @@ events:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1FcJrR'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gmy8RJ'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_43b0c/fast
-        make -j8  -f CMakeFiles/cmTC_43b0c.dir/build.make CMakeFiles/cmTC_43b0c.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1FcJrR'
-        Building C object CMakeFiles/cmTC_43b0c.dir/CheckIncludeFile.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_43b0c.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_43b0c.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_43b0c.dir/CheckIncludeFile.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1FcJrR/CheckIncludeFile.c
-        Linking C executable cmTC_43b0c
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43b0c.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_43b0c.dir/CheckIncludeFile.c.o -o cmTC_43b0c  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1FcJrR'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_84a45/fast
+        make -j8  -f CMakeFiles/cmTC_84a45.dir/build.make CMakeFiles/cmTC_84a45.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gmy8RJ'
+        Building C object CMakeFiles/cmTC_84a45.dir/CheckIncludeFile.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_84a45.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_84a45.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_84a45.dir/CheckIncludeFile.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gmy8RJ/CheckIncludeFile.c
+        Linking C executable cmTC_84a45
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84a45.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_84a45.dir/CheckIncludeFile.c.o -o cmTC_84a45  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gmy8RJ'
         
       exitCode: 0
   -
@@ -296,8 +296,8 @@ events:
     checks:
       - "Looking for stddef.h"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ed0Kd9"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ed0Kd9"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hzYGrv"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hzYGrv"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -315,17 +315,17 @@ events:
       variable: "HAVE_STDDEF_H"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ed0Kd9'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hzYGrv'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6a94a/fast
-        make -j8  -f CMakeFiles/cmTC_6a94a.dir/build.make CMakeFiles/cmTC_6a94a.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ed0Kd9'
-        Building C object CMakeFiles/cmTC_6a94a.dir/CheckIncludeFile.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_6a94a.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_6a94a.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_6a94a.dir/CheckIncludeFile.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ed0Kd9/CheckIncludeFile.c
-        Linking C executable cmTC_6a94a
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a94a.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_6a94a.dir/CheckIncludeFile.c.o -o cmTC_6a94a  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ed0Kd9'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3ef81/fast
+        make -j8  -f CMakeFiles/cmTC_3ef81.dir/build.make CMakeFiles/cmTC_3ef81.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hzYGrv'
+        Building C object CMakeFiles/cmTC_3ef81.dir/CheckIncludeFile.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_3ef81.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_3ef81.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_3ef81.dir/CheckIncludeFile.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hzYGrv/CheckIncludeFile.c
+        Linking C executable cmTC_3ef81
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ef81.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_3ef81.dir/CheckIncludeFile.c.o -o cmTC_3ef81  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hzYGrv'
         
       exitCode: 0
   -
@@ -337,8 +337,8 @@ events:
     checks:
       - "Check size of size_t"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hCN2yx"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hCN2yx"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-EMvsPN"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-EMvsPN"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -356,17 +356,17 @@ events:
       variable: "HAVE_SIZE_T"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hCN2yx'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-EMvsPN'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_84066/fast
-        make -j8  -f CMakeFiles/cmTC_84066.dir/build.make CMakeFiles/cmTC_84066.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hCN2yx'
-        Building C object CMakeFiles/cmTC_84066.dir/SIZE_T.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_84066.dir/SIZE_T.c.o -MF CMakeFiles/cmTC_84066.dir/SIZE_T.c.o.d -o CMakeFiles/cmTC_84066.dir/SIZE_T.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hCN2yx/SIZE_T.c
-        Linking C executable cmTC_84066
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84066.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_84066.dir/SIZE_T.c.o -o cmTC_84066  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hCN2yx'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_70396/fast
+        make -j8  -f CMakeFiles/cmTC_70396.dir/build.make CMakeFiles/cmTC_70396.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-EMvsPN'
+        Building C object CMakeFiles/cmTC_70396.dir/SIZE_T.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_70396.dir/SIZE_T.c.o -MF CMakeFiles/cmTC_70396.dir/SIZE_T.c.o.d -o CMakeFiles/cmTC_70396.dir/SIZE_T.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-EMvsPN/SIZE_T.c
+        Linking C executable cmTC_70396
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70396.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_70396.dir/SIZE_T.c.o -o cmTC_70396  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-EMvsPN'
         
       exitCode: 0
   -
@@ -378,8 +378,8 @@ events:
     checks:
       - "Check size of unsigned long"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0Uq9md"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0Uq9md"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1HRgbA"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1HRgbA"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -397,17 +397,17 @@ events:
       variable: "HAVE_UNSIGNED_LONG"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0Uq9md'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1HRgbA'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_678ab/fast
-        make -j8  -f CMakeFiles/cmTC_678ab.dir/build.make CMakeFiles/cmTC_678ab.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0Uq9md'
-        Building C object CMakeFiles/cmTC_678ab.dir/UNSIGNED_LONG.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_678ab.dir/UNSIGNED_LONG.c.o -MF CMakeFiles/cmTC_678ab.dir/UNSIGNED_LONG.c.o.d -o CMakeFiles/cmTC_678ab.dir/UNSIGNED_LONG.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0Uq9md/UNSIGNED_LONG.c
-        Linking C executable cmTC_678ab
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_678ab.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_678ab.dir/UNSIGNED_LONG.c.o -o cmTC_678ab  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0Uq9md'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_88b5e/fast
+        make -j8  -f CMakeFiles/cmTC_88b5e.dir/build.make CMakeFiles/cmTC_88b5e.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1HRgbA'
+        Building C object CMakeFiles/cmTC_88b5e.dir/UNSIGNED_LONG.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_88b5e.dir/UNSIGNED_LONG.c.o -MF CMakeFiles/cmTC_88b5e.dir/UNSIGNED_LONG.c.o.d -o CMakeFiles/cmTC_88b5e.dir/UNSIGNED_LONG.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1HRgbA/UNSIGNED_LONG.c
+        Linking C executable cmTC_88b5e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88b5e.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_88b5e.dir/UNSIGNED_LONG.c.o -o cmTC_88b5e  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-1HRgbA'
         
       exitCode: 0
   -
@@ -419,8 +419,8 @@ events:
     checks:
       - "Performing Test HAVE_BUILTIN_CTZL"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-X51wqB"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-X51wqB"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-qGl7BT"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-qGl7BT"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -438,17 +438,17 @@ events:
       variable: "HAVE_BUILTIN_CTZL"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-X51wqB'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-qGl7BT'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_83946/fast
-        make -j8  -f CMakeFiles/cmTC_83946.dir/build.make CMakeFiles/cmTC_83946.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-X51wqB'
-        Building C object CMakeFiles/cmTC_83946.dir/src.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_BUILTIN_CTZL  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_83946.dir/src.c.o -MF CMakeFiles/cmTC_83946.dir/src.c.o.d -o CMakeFiles/cmTC_83946.dir/src.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-X51wqB/src.c
-        Linking C executable cmTC_83946
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83946.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_83946.dir/src.c.o -o cmTC_83946  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-X51wqB'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_29d50/fast
+        make -j8  -f CMakeFiles/cmTC_29d50.dir/build.make CMakeFiles/cmTC_29d50.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-qGl7BT'
+        Building C object CMakeFiles/cmTC_29d50.dir/src.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_BUILTIN_CTZL  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_29d50.dir/src.c.o -MF CMakeFiles/cmTC_29d50.dir/src.c.o.d -o CMakeFiles/cmTC_29d50.dir/src.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-qGl7BT/src.c
+        Linking C executable cmTC_29d50
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29d50.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_29d50.dir/src.c.o -o cmTC_29d50  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-qGl7BT'
         
       exitCode: 0
   -
@@ -459,8 +459,8 @@ events:
     checks:
       - "Looking for include file locale.h"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-NnG4yE"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-NnG4yE"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-Xefouj"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-Xefouj"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -478,17 +478,17 @@ events:
       variable: "HAVE_LOCALE_H"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-NnG4yE'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-Xefouj'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7f57a/fast
-        make -j8  -f CMakeFiles/cmTC_7f57a.dir/build.make CMakeFiles/cmTC_7f57a.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-NnG4yE'
-        Building C object CMakeFiles/cmTC_7f57a.dir/HAVE_LOCALE_H.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_7f57a.dir/HAVE_LOCALE_H.c.o -MF CMakeFiles/cmTC_7f57a.dir/HAVE_LOCALE_H.c.o.d -o CMakeFiles/cmTC_7f57a.dir/HAVE_LOCALE_H.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-NnG4yE/HAVE_LOCALE_H.c
-        Linking C executable cmTC_7f57a
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f57a.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_7f57a.dir/HAVE_LOCALE_H.c.o -o cmTC_7f57a  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-NnG4yE'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7770c/fast
+        make -j8  -f CMakeFiles/cmTC_7770c.dir/build.make CMakeFiles/cmTC_7770c.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-Xefouj'
+        Building C object CMakeFiles/cmTC_7770c.dir/HAVE_LOCALE_H.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_7770c.dir/HAVE_LOCALE_H.c.o -MF CMakeFiles/cmTC_7770c.dir/HAVE_LOCALE_H.c.o.d -o CMakeFiles/cmTC_7770c.dir/HAVE_LOCALE_H.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-Xefouj/HAVE_LOCALE_H.c
+        Linking C executable cmTC_7770c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7770c.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_7770c.dir/HAVE_LOCALE_H.c.o -o cmTC_7770c  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-Xefouj'
         
       exitCode: 0
   -
@@ -499,8 +499,8 @@ events:
     checks:
       - "Looking for include file stdlib.h"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-46Op9L"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-46Op9L"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-DTBBj0"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-DTBBj0"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -518,17 +518,17 @@ events:
       variable: "HAVE_STDLIB_H"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-46Op9L'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-DTBBj0'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f344/fast
-        make -j8  -f CMakeFiles/cmTC_8f344.dir/build.make CMakeFiles/cmTC_8f344.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-46Op9L'
-        Building C object CMakeFiles/cmTC_8f344.dir/HAVE_STDLIB_H.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_8f344.dir/HAVE_STDLIB_H.c.o -MF CMakeFiles/cmTC_8f344.dir/HAVE_STDLIB_H.c.o.d -o CMakeFiles/cmTC_8f344.dir/HAVE_STDLIB_H.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-46Op9L/HAVE_STDLIB_H.c
-        Linking C executable cmTC_8f344
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f344.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_8f344.dir/HAVE_STDLIB_H.c.o -o cmTC_8f344  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-46Op9L'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ba29d/fast
+        make -j8  -f CMakeFiles/cmTC_ba29d.dir/build.make CMakeFiles/cmTC_ba29d.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-DTBBj0'
+        Building C object CMakeFiles/cmTC_ba29d.dir/HAVE_STDLIB_H.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_ba29d.dir/HAVE_STDLIB_H.c.o -MF CMakeFiles/cmTC_ba29d.dir/HAVE_STDLIB_H.c.o.d -o CMakeFiles/cmTC_ba29d.dir/HAVE_STDLIB_H.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-DTBBj0/HAVE_STDLIB_H.c
+        Linking C executable cmTC_ba29d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba29d.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_ba29d.dir/HAVE_STDLIB_H.c.o -o cmTC_ba29d  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-DTBBj0'
         
       exitCode: 0
   -
@@ -539,8 +539,8 @@ events:
     checks:
       - "Looking for include file sys/types.h"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JiyR10"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JiyR10"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-htuv7k"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-htuv7k"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -558,17 +558,17 @@ events:
       variable: "NEED_SYS_TYPES_H"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JiyR10'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-htuv7k'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f61c/fast
-        make -j8  -f CMakeFiles/cmTC_8f61c.dir/build.make CMakeFiles/cmTC_8f61c.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JiyR10'
-        Building C object CMakeFiles/cmTC_8f61c.dir/NEED_SYS_TYPES_H.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_8f61c.dir/NEED_SYS_TYPES_H.c.o -MF CMakeFiles/cmTC_8f61c.dir/NEED_SYS_TYPES_H.c.o.d -o CMakeFiles/cmTC_8f61c.dir/NEED_SYS_TYPES_H.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JiyR10/NEED_SYS_TYPES_H.c
-        Linking C executable cmTC_8f61c
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f61c.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_8f61c.dir/NEED_SYS_TYPES_H.c.o -o cmTC_8f61c  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JiyR10'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fb246/fast
+        make -j8  -f CMakeFiles/cmTC_fb246.dir/build.make CMakeFiles/cmTC_fb246.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-htuv7k'
+        Building C object CMakeFiles/cmTC_fb246.dir/NEED_SYS_TYPES_H.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_fb246.dir/NEED_SYS_TYPES_H.c.o -MF CMakeFiles/cmTC_fb246.dir/NEED_SYS_TYPES_H.c.o.d -o CMakeFiles/cmTC_fb246.dir/NEED_SYS_TYPES_H.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-htuv7k/NEED_SYS_TYPES_H.c
+        Linking C executable cmTC_fb246
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb246.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_fb246.dir/NEED_SYS_TYPES_H.c.o -o cmTC_fb246  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-htuv7k'
         
       exitCode: 0
   -
@@ -580,8 +580,8 @@ events:
     checks:
       - "Looking for memset"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-BzxxWr"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-BzxxWr"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gPVsay"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gPVsay"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -599,17 +599,17 @@ events:
       variable: "HAVE_MEMSET"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-BzxxWr'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gPVsay'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_388f0/fast
-        make -j8  -f CMakeFiles/cmTC_388f0.dir/build.make CMakeFiles/cmTC_388f0.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-BzxxWr'
-        Building C object CMakeFiles/cmTC_388f0.dir/CheckSymbolExists.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -fPIE -MD -MT CMakeFiles/cmTC_388f0.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_388f0.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_388f0.dir/CheckSymbolExists.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-BzxxWr/CheckSymbolExists.c
-        Linking C executable cmTC_388f0
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_388f0.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_388f0.dir/CheckSymbolExists.c.o -o cmTC_388f0  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-BzxxWr'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fecaf/fast
+        make -j8  -f CMakeFiles/cmTC_fecaf.dir/build.make CMakeFiles/cmTC_fecaf.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gPVsay'
+        Building C object CMakeFiles/cmTC_fecaf.dir/CheckSymbolExists.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -fPIE -MD -MT CMakeFiles/cmTC_fecaf.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_fecaf.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_fecaf.dir/CheckSymbolExists.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gPVsay/CheckSymbolExists.c
+        Linking C executable cmTC_fecaf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fecaf.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_fecaf.dir/CheckSymbolExists.c.o -o cmTC_fecaf  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-gPVsay'
         
       exitCode: 0
   -
@@ -621,8 +621,8 @@ events:
     checks:
       - "Looking for memcpy"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-rsgXJT"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-rsgXJT"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-VKaKJf"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-VKaKJf"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -640,17 +640,17 @@ events:
       variable: "HAVE_MEMCPY"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-rsgXJT'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-VKaKJf'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c0696/fast
-        make -j8  -f CMakeFiles/cmTC_c0696.dir/build.make CMakeFiles/cmTC_c0696.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-rsgXJT'
-        Building C object CMakeFiles/cmTC_c0696.dir/CheckSymbolExists.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -fPIE -MD -MT CMakeFiles/cmTC_c0696.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_c0696.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_c0696.dir/CheckSymbolExists.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-rsgXJT/CheckSymbolExists.c
-        Linking C executable cmTC_c0696
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0696.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_c0696.dir/CheckSymbolExists.c.o -o cmTC_c0696  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-rsgXJT'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_afdb8/fast
+        make -j8  -f CMakeFiles/cmTC_afdb8.dir/build.make CMakeFiles/cmTC_afdb8.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-VKaKJf'
+        Building C object CMakeFiles/cmTC_afdb8.dir/CheckSymbolExists.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -fPIE -MD -MT CMakeFiles/cmTC_afdb8.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_afdb8.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_afdb8.dir/CheckSymbolExists.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-VKaKJf/CheckSymbolExists.c
+        Linking C executable cmTC_afdb8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afdb8.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_afdb8.dir/CheckSymbolExists.c.o -o cmTC_afdb8  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-VKaKJf'
         
       exitCode: 0
   -
@@ -662,8 +662,8 @@ events:
     checks:
       - "Check size of unsigned char"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-oBHGLz"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-oBHGLz"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-eyh9Rj"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-eyh9Rj"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -681,17 +681,17 @@ events:
       variable: "HAVE_UNSIGNED_CHAR"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-oBHGLz'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-eyh9Rj'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1b718/fast
-        make -j8  -f CMakeFiles/cmTC_1b718.dir/build.make CMakeFiles/cmTC_1b718.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-oBHGLz'
-        Building C object CMakeFiles/cmTC_1b718.dir/UNSIGNED_CHAR.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_1b718.dir/UNSIGNED_CHAR.c.o -MF CMakeFiles/cmTC_1b718.dir/UNSIGNED_CHAR.c.o.d -o CMakeFiles/cmTC_1b718.dir/UNSIGNED_CHAR.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-oBHGLz/UNSIGNED_CHAR.c
-        Linking C executable cmTC_1b718
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b718.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_1b718.dir/UNSIGNED_CHAR.c.o -o cmTC_1b718  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-oBHGLz'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07de3/fast
+        make -j8  -f CMakeFiles/cmTC_07de3.dir/build.make CMakeFiles/cmTC_07de3.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-eyh9Rj'
+        Building C object CMakeFiles/cmTC_07de3.dir/UNSIGNED_CHAR.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_07de3.dir/UNSIGNED_CHAR.c.o -MF CMakeFiles/cmTC_07de3.dir/UNSIGNED_CHAR.c.o.d -o CMakeFiles/cmTC_07de3.dir/UNSIGNED_CHAR.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-eyh9Rj/UNSIGNED_CHAR.c
+        Linking C executable cmTC_07de3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07de3.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_07de3.dir/UNSIGNED_CHAR.c.o -o cmTC_07de3  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-eyh9Rj'
         
       exitCode: 0
   -
@@ -703,8 +703,8 @@ events:
     checks:
       - "Check size of unsigned short"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XxzGcT"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XxzGcT"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-glcjIz"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-glcjIz"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -722,17 +722,17 @@ events:
       variable: "HAVE_UNSIGNED_SHORT"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XxzGcT'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-glcjIz'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c4c6e/fast
-        make -j8  -f CMakeFiles/cmTC_c4c6e.dir/build.make CMakeFiles/cmTC_c4c6e.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XxzGcT'
-        Building C object CMakeFiles/cmTC_c4c6e.dir/UNSIGNED_SHORT.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_c4c6e.dir/UNSIGNED_SHORT.c.o -MF CMakeFiles/cmTC_c4c6e.dir/UNSIGNED_SHORT.c.o.d -o CMakeFiles/cmTC_c4c6e.dir/UNSIGNED_SHORT.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XxzGcT/UNSIGNED_SHORT.c
-        Linking C executable cmTC_c4c6e
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4c6e.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_c4c6e.dir/UNSIGNED_SHORT.c.o -o cmTC_c4c6e  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XxzGcT'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f783e/fast
+        make -j8  -f CMakeFiles/cmTC_f783e.dir/build.make CMakeFiles/cmTC_f783e.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-glcjIz'
+        Building C object CMakeFiles/cmTC_f783e.dir/UNSIGNED_SHORT.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_f783e.dir/UNSIGNED_SHORT.c.o -MF CMakeFiles/cmTC_f783e.dir/UNSIGNED_SHORT.c.o.d -o CMakeFiles/cmTC_f783e.dir/UNSIGNED_SHORT.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-glcjIz/UNSIGNED_SHORT.c
+        Linking C executable cmTC_f783e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f783e.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_f783e.dir/UNSIGNED_SHORT.c.o -o cmTC_f783e  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-glcjIz'
         
       exitCode: 0
   -
@@ -744,8 +744,8 @@ events:
     checks:
       - "Performing Test INCOMPLETE_TYPES"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-H9NjEg"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-H9NjEg"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-4VwBw7"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-4VwBw7"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -763,17 +763,17 @@ events:
       variable: "INCOMPLETE_TYPES"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-H9NjEg'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-4VwBw7'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6f3a4/fast
-        make -j8  -f CMakeFiles/cmTC_6f3a4.dir/build.make CMakeFiles/cmTC_6f3a4.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-H9NjEg'
-        Building C object CMakeFiles/cmTC_6f3a4.dir/src.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DINCOMPLETE_TYPES  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_6f3a4.dir/src.c.o -MF CMakeFiles/cmTC_6f3a4.dir/src.c.o.d -o CMakeFiles/cmTC_6f3a4.dir/src.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-H9NjEg/src.c
-        Linking C executable cmTC_6f3a4
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f3a4.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_6f3a4.dir/src.c.o -o cmTC_6f3a4  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-H9NjEg'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_90bec/fast
+        make -j8  -f CMakeFiles/cmTC_90bec.dir/build.make CMakeFiles/cmTC_90bec.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-4VwBw7'
+        Building C object CMakeFiles/cmTC_90bec.dir/src.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DINCOMPLETE_TYPES  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_90bec.dir/src.c.o -MF CMakeFiles/cmTC_90bec.dir/src.c.o.d -o CMakeFiles/cmTC_90bec.dir/src.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-4VwBw7/src.c
+        Linking C executable cmTC_90bec
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90bec.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_90bec.dir/src.c.o -o cmTC_90bec  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-4VwBw7'
         
       exitCode: 0
   -
@@ -785,8 +785,8 @@ events:
     checks:
       - "Performing Test INLINE_WORKS"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-TyxuVF"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-TyxuVF"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WbUovT"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WbUovT"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -804,17 +804,17 @@ events:
       variable: "INLINE_WORKS"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-TyxuVF'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WbUovT'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a20ed/fast
-        make -j8  -f CMakeFiles/cmTC_a20ed.dir/build.make CMakeFiles/cmTC_a20ed.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-TyxuVF'
-        Building C object CMakeFiles/cmTC_a20ed.dir/src.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DINLINE_WORKS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_a20ed.dir/src.c.o -MF CMakeFiles/cmTC_a20ed.dir/src.c.o.d -o CMakeFiles/cmTC_a20ed.dir/src.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-TyxuVF/src.c
-        Linking C executable cmTC_a20ed
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a20ed.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_a20ed.dir/src.c.o -o cmTC_a20ed  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-TyxuVF'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8dd2a/fast
+        make -j8  -f CMakeFiles/cmTC_8dd2a.dir/build.make CMakeFiles/cmTC_8dd2a.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WbUovT'
+        Building C object CMakeFiles/cmTC_8dd2a.dir/src.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DINLINE_WORKS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_8dd2a.dir/src.c.o -MF CMakeFiles/cmTC_8dd2a.dir/src.c.o.d -o CMakeFiles/cmTC_8dd2a.dir/src.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WbUovT/src.c
+        Linking C executable cmTC_8dd2a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8dd2a.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_8dd2a.dir/src.c.o -o cmTC_8dd2a  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-WbUovT'
         
       exitCode: 0
   -
@@ -826,8 +826,8 @@ events:
     checks:
       - "Performing Test HAVE_VERSION_SCRIPT"
     directories:
-      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-SKgbc1"
-      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-SKgbc1"
+      source: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JJN1bC"
+      binary: "/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JJN1bC"
     cmakeVariables:
       ANDROID_ABI: "armeabi-v7a"
       ANDROID_ARM_MODE: "thumb"
@@ -845,18 +845,18 @@ events:
       variable: "HAVE_VERSION_SCRIPT"
       cached: true
       stdout: |
-        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-SKgbc1'
+        Change Dir: '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JJN1bC'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_30aa1/fast
-        make -j8  -f CMakeFiles/cmTC_30aa1.dir/build.make CMakeFiles/cmTC_30aa1.dir/build
-        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-SKgbc1'
-        Building C object CMakeFiles/cmTC_30aa1.dir/src.c.o
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_VERSION_SCRIPT  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -Wl,--version-script,/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/conftest.map -fPIE -MD -MT CMakeFiles/cmTC_30aa1.dir/src.c.o -MF CMakeFiles/cmTC_30aa1.dir/src.c.o.d -o CMakeFiles/cmTC_30aa1.dir/src.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-SKgbc1/src.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0c2a5/fast
+        make -j8  -f CMakeFiles/cmTC_0c2a5.dir/build.make CMakeFiles/cmTC_0c2a5.dir/build
+        make[1]: Entering directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JJN1bC'
+        Building C object CMakeFiles/cmTC_0c2a5.dir/src.c.o
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_VERSION_SCRIPT  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -Wl,--version-script,/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/conftest.map -fPIE -MD -MT CMakeFiles/cmTC_0c2a5.dir/src.c.o -MF CMakeFiles/cmTC_0c2a5.dir/src.c.o.d -o CMakeFiles/cmTC_0c2a5.dir/src.c.o -c /home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JJN1bC/src.c
         clang: warning: -Wl,--version-script,/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/conftest.map: 'linker' input unused [-Wunused-command-line-argument]
-        Linking C executable cmTC_30aa1
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30aa1.dir/link.txt --verbose=1
-        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -Wl,--version-script,/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/conftest.map -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_30aa1.dir/src.c.o -o cmTC_30aa1  -latomic -lm 
-        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-SKgbc1'
+        Linking C executable cmTC_0c2a5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c2a5.dir/link.txt --verbose=1
+        /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi19 --sysroot=/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -Wl,--version-script,/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/conftest.map -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_0c2a5.dir/src.c.o -o cmTC_0c2a5  -latomic -lm 
+        make[1]: Leaving directory '/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-JJN1bC'
         
       exitCode: 0
   -

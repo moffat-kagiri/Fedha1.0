@@ -39,6 +39,7 @@ class TrackerApp(MDApp):
         self.screen_manager = ScreenManager()  # Initialize screen manager
 
     def build(self):
+        Logger.info("App: Building the application")
         Builder.load_file("ui/widgets/cards.kv")
         Builder.load_file("ui/widgets/inputs.kv")
         self.screen_manager.add_widget(BudgetScreen(name="budget"))
@@ -50,11 +51,13 @@ class TrackerApp(MDApp):
         self.permissions.ensure_permissions(self.initialize_app)
         self.register_screens()  # Register screens before returning
         self.title = "Tracker"
+        self.screen_manager.current = 'home'
         return self.screen_manager
 
     def initialize_app(self):
         """Called after permissions are granted"""
         Logger.info("App: Initializing after permissions granted")
+        Logger.info("App: Initializing Google Drive service")
         # Initialize Google Drive service
         self.gdrive_service = GoogleDriveService(
             credentials_path=get_app_path("gdrive_creds.json"),
@@ -63,6 +66,7 @@ class TrackerApp(MDApp):
         # Initialize your app components here
 
     def register_screens(self):
+        Logger.info("App: Registering screens")
         self.screen_manager.add_widget(HomeScreen(name='home'))
         self.screen_manager.add_widget(LoansScreen(name='loans'))
         self.screen_manager.add_widget(SummariesScreen(name='summaries'))

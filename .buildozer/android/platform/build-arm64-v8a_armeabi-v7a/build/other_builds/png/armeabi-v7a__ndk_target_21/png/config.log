@@ -38,7 +38,7 @@ PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/emulator
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools/bin
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools
-PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash
+PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash
 PATH: /home/moffat-kagiri/Projects/Fedha/myenv/bin
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools
@@ -46,9 +46,9 @@ PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/emulator
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools/bin
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools
-PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash
+PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash
 PATH: /home/moffat-kagiri/Projects/Fedha/myenv/bin
-PATH: /home/moffat-kagiri/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/bin/remote-cli
+PATH: /home/moffat-kagiri/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/bin/remote-cli
 PATH: /home/moffat-kagiri/.local/bin
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools
@@ -76,12 +76,23 @@ PATH: /mnt/c/Program Files/Git/cmd
 PATH: /mnt/c/Program Files/nodejs/
 PATH: /mnt/c/Program Files/Go/bin
 PATH: /mnt/c/Program Files/GitHub CLI/
+PATH: /mnt/c/Program Files/Tesseract-OCR
+PATH: /mnt/c/Program Files/Tesseract-OCR/tesseract.exe
+PATH: /mnt/c/Program Files/Poppler/poppler-24.08.0/Library/bin/
+PATH: /mnt/c/Program Files/Poppler
+PATH: /mnt/c/ProgramData/miniconda3
+PATH: /mnt/c/ProgramData/miniconda3/Scripts
+PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Roaming/Python/Python312/Scripts
+PATH: /mnt/c/Program Files/dotnet/
+PATH: /mnt/c/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Microsoft/WindowsApps
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Programs/Microsoft VS Code/bin
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/GitHubDesktop/bin
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Roaming/npm
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Microsoft/WinGet/Links
 PATH: /mnt/c/Users/MOFFAT KAGIRI/go/bin
+PATH: /mnt/c/Users/MOFFAT KAGIRI/.dotnet/tools
+PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Programs/Ollama
 PATH: /snap/bin
 PATH: /home/moffat-kagiri/.local/bin
 
@@ -514,7 +525,7 @@ conftest.c:48:6: note: 'pow' is a builtin with type 'double (double, double)'
 1 warning generated.
 ld: error: undefined symbol: pow
 >>> referenced by conftest.c
->>>               /tmp/conftest-935f21.o:(main)
+>>>               /tmp/conftest-3b286e.o:(main)
 clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13016: $? = 1
 configure: failed program was:

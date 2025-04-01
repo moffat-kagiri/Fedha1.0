@@ -31,7 +31,6 @@ PATH: /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchain
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools/
 PATH: /home/moffat-kagiri/.buildozer/android/platform/apache-ant-1.9.4/bin/
-PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/
 PATH: /home/moffat-kagiri/Projects/Fedha/myenv/bin/
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools/
@@ -39,9 +38,17 @@ PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/emulator/
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools/bin/
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools/
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools/
-PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/
+PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/
 PATH: /home/moffat-kagiri/Projects/Fedha/myenv/bin/
-PATH: /home/moffat-kagiri/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/bin/remote-cli/
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools/
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/emulator/
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools/bin/
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/tools/
+PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools/
+PATH: /home/moffat-kagiri/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/
+PATH: /home/moffat-kagiri/Projects/Fedha/myenv/bin/
+PATH: /home/moffat-kagiri/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/bin/remote-cli/
 PATH: /home/moffat-kagiri/.local/bin/
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/
 PATH: /home/moffat-kagiri/.buildozer/android/platform/android-sdk/platform-tools/
@@ -69,12 +76,23 @@ PATH: /mnt/c/Program Files/Git/cmd/
 PATH: /mnt/c/Program Files/nodejs/
 PATH: /mnt/c/Program Files/Go/bin/
 PATH: /mnt/c/Program Files/GitHub CLI/
+PATH: /mnt/c/Program Files/Tesseract-OCR/
+PATH: /mnt/c/Program Files/Tesseract-OCR/tesseract.exe/
+PATH: /mnt/c/Program Files/Poppler/poppler-24.08.0/Library/bin/
+PATH: /mnt/c/Program Files/Poppler/
+PATH: /mnt/c/ProgramData/miniconda3/
+PATH: /mnt/c/ProgramData/miniconda3/Scripts/
+PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Roaming/Python/Python312/Scripts/
+PATH: /mnt/c/Program Files/dotnet/
+PATH: /mnt/c/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Microsoft/WindowsApps/
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Programs/Microsoft VS Code/bin/
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/GitHubDesktop/bin/
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Roaming/npm/
 PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Microsoft/WinGet/Links/
 PATH: /mnt/c/Users/MOFFAT KAGIRI/go/bin/
+PATH: /mnt/c/Users/MOFFAT KAGIRI/.dotnet/tools/
+PATH: /mnt/c/Users/MOFFAT KAGIRI/AppData/Local/Programs/Ollama/
 PATH: /snap/bin/
 PATH: /home/moffat-kagiri/.local/bin/
 
@@ -1033,7 +1051,7 @@ configure:18637: checking for memfd_create
 configure:18637: /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC -o conftest -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -DANDROID -I/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/fedha/arm64-v8a/include/python3.1   -L/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/fedha/arm64-v8a conftest.c  >&5
 ld: error: undefined symbol: memfd_create
 >>> referenced by conftest.c
->>>               /tmp/conftest-a5128a.o:(main)
+>>>               /tmp/conftest-b1818f.o:(main)
 clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:18637: $? = 1
 configure: failed program was:
@@ -1104,7 +1122,7 @@ configure:18658: checking for mkostemp
 configure:18658: /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC -o conftest -target aarch64-linux-android21 -fomit-frame-pointer -march=armv8-a -fPIC -Wall -fexceptions -DANDROID -I/home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -I/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-installs/fedha/arm64-v8a/include/python3.1   -L/home/moffat-kagiri/Projects/Fedha/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/fedha/arm64-v8a conftest.c  >&5
 ld: error: undefined symbol: mkostemp
 >>> referenced by conftest.c
->>>               /tmp/conftest-9e28da.o:(main)
+>>>               /tmp/conftest-b8e5db.o:(main)
 >>> did you mean: mkstemp
 >>> defined in: /home/moffat-kagiri/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/21/libc.so
 clang-14: error: linker command failed with exit code 1 (use -v to see invocation)
