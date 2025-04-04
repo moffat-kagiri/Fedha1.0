@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fedha</string>
+    <string name="private_version">5a59cf0d888caa32ab6e18c0bdfc44cbeb79018a</string>
+    <string name="presplash_color">#000000</string>
+    <string name="urlScheme">kivy</string>
+</resources>

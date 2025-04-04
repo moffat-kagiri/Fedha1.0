@@ -1,0 +1,62 @@
+# ui/widgets/cards.kv
+<RatioCard>:
+    orientation: "vertical"
+    size_hint: None, None
+    size_hint_y: None
+    height: "100dp"
+    padding: "8dp"
+    spacing: "8dp"
+    radius: "12dp"
+    md_bg_color: root.bg_color
+    
+    MDIcon:
+        icon: root.icon
+        pos_hint: {"center_x": .5, "center_y": .5}
+        size_hint: None, None
+        size: "24dp", "24dp"
+        
+    MDLabel:
+        text: root.title
+        halign: "center"
+        theme_text_color: "Secondary"
+        
+    MDLabel:
+        text: f"{root.value}%"
+        halign: "center"
+        theme_text_color: "Primary"
+        font_style: "H5"
+
+<TransactionCard>:
+    orientation: "horizontal"
+    size_hint_y: None
+    height: "80dp"
+    padding: "16dp"
+    spacing: "16dp"
+    
+    MDIcon:
+        icon: root.icon
+        font_size: "24sp"
+        theme_text_color: "Custom"
+        text_color: app.theme_cls.primary_color if root.category == "income" else app.theme_cls.error_color
+        
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "4dp"
+        
+        MDLabel:
+            text: root.description
+            font_style: "Body1"
+            shorten: True
+            shorten_from: "right"
+            
+        MDLabel:
+            text: root.date
+            font_style: "Caption"
+            theme_text_color: "Secondary"
+            
+    MDLabel:
+        text: f"KES {root.amount:,.2f}"
+        font_style: "Body1"
+        halign: "right"
+        theme_text_color: "Custom"
+        text_color: app.theme_cls.primary_color if root.category == "income" else app.theme_cls.error_color

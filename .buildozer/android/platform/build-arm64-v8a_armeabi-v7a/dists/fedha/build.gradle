@@ -1,0 +1,82 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+       google()
+       jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+
+apply plugin: 'com.android.application'
+
+
+android {
+    namespace 'org.test.fedha'
+    compileSdkVersion 33
+    buildToolsVersion '36.0.0-rc5'
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 10211
+        versionName '0.1'
+        manifestPlaceholders = [:]
+    }
+
+	
+	packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+        doNotStrip '**/*.so'
+        
+	}
+	
+
+	
+
+    packagingOptions {
+        "exclude 'META-INF/common.kotlin_module'"
+        "exclude 'META-INF/*.kotlin_module'"
+    }
+
+    buildTypes {
+        debug {
+        }
+        release {
+            
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        "sourceCompatibility = 1.8"
+        "targetCompatibility = 1.8"
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            java {}
+        }
+    }
+
+    aaptOptions {
+        noCompress "tflite"
+    }
+
+}
+
+dependencies {
+    
+}
