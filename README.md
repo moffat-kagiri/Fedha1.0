@@ -6,6 +6,7 @@ ExpensesTracker is a Python application that helps users track their income, exp
 
 ## Project Structure
 
+```
 ExpensesTracker/
 ├── android/
 │ ├── permissions.py
@@ -39,6 +40,7 @@ ExpensesTracker/
 ├── main.py
 ├── README.md
 └── __init__.py
+```
 
 ## Functions
 
