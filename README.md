@@ -6,7 +6,7 @@ ExpensesTracker is a Python application that helps users track their income, exp
 
 ## Project Structure
 
-```
+```text
 ExpensesTracker/
 ├── android/
 │ ├── permissions.py
@@ -113,12 +113,14 @@ adb shell monkey -p org.test.fedha -c android.intent.category.LAUNCHER 1
 
 ## Dependencies
 
+```text
     - Kivy
     - KivyMD
     - PyDrive2
     - SciPy
     - Buildozer
     - Cython
+```
 
 ## License
 
