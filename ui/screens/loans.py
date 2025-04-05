@@ -283,3 +283,32 @@ class LoansScreen(MDScreen):
             self.show_error(str(e))
         except Exception as e:
             self.show_error(f"Error saving loan: {str(e)}")
+    def show_loan_details(self, loan):
+        """Show detailed information about the selected loan"""
+        # Create a layout for the popup content
+        content = MDBoxLayout(
+            orientation="vertical",
+            spacing=dp(10),
+            padding=dp(20),
+            size_hint_y=None,
+            height=dp(200)
+        )
+
+        # Add loan details to the popup content
+        content.add_widget(MDLabel(text=f"Loan Name: {loan['name']}", theme_text_color="Primary"))
+        content.add_widget(MDLabel(text=f"Amount: KES {loan['amount']}", theme_text_color="Secondary"))
+        content.add_widget(MDLabel(text=f"Icon: {loan['icon']}", theme_text_color="Secondary"))
+
+        # Create and open the popup dialog
+        self.dialog = MDDialog(
+            title="Loan Details",
+            type="custom",
+            content_cls=content,
+            buttons=[
+                MDFlatButton(
+                    text="CLOSE",
+                    on_release=lambda x: self.dialog.dismiss()
+                )
+            ]
+        )
+        self.dialog.open()
