@@ -1,4 +1,5 @@
 # ui/screens/summaries.py
+from venv import logger
 from kivy.uix.boxlayout import BoxLayout
 from kivy_garden.graph import Graph, LinePlot, BarPlot
 from kivymd.uix.screen import MDScreen
@@ -97,7 +98,7 @@ class SummariesScreen(MDScreen):
             self.savings_card.update_amount(f"KES {overview['savings']:,.2f}")
             
         except Exception as e:
-            Logger.error(f"Error updating summary: {str(e)}")
+            logger.error(f"Error updating summary: {str(e)}")
 
     def update_chart(self, chart_type="bar"):
         """Create or update financial chart"""
